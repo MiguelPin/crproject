@@ -1,0 +1,20 @@
+<?php
+
+
+header('Cache-Control: no-cache, must-revalidate');
+header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+header('Content-type: application/json');
+$u = strip_tags($_POST['username']);
+$p = strip_tags($_POST['password']);
+      
+$sorgu = "SELECT * from fe_users WHERE username ='$u' AND password ='$p' "";
+$resube = $GLOBALS['TYPO3_DB']->sql(TYPO3_db,$sorgu);     
+
+if(mysql_num_rows($resube)>0)
+            {
+               echo 'true';
+            }else{
+               echo 'false'; 
+            }      
+
+?>
