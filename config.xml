@@ -2,15 +2,15 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.crproject.cr"
-	version 	= "0.0.3">
+	version 	= "0.0.4">
 
 	<name>CR</name>
 
 	<description>
-		Beta 0.0.3
+		Beta 0.0.4
 	</description>
 
-	<author href="http://i-solucions.com"
+	<author href="http://cr.i-solucions.com"
 		email="miquelpin@gmail.com">
 		Miguel Pin 
 	</author>
