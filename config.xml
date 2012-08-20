@@ -2,12 +2,12 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.crproject.cr"
-	version 	= "0.0.5">
+	version 	= "0.0.6">
 
 	<name>CR</name>
 
 	<description>
-		Beta 0.0.5
+		Beta 0.0.6
 	</description>
 
 	<author href="http://cr.i-solucions.com"
@@ -46,14 +46,14 @@
 <preference name="android-minSdkVersion" value="10" />
 <preference name="android-maxSdkVersion" value="15" />
 <preference name="target-device" value="handset" />
-<preference name="phonegap-version" value="2.0.0" />
+<preference name="phonegap-version" value="1.9.0" />
 <preference name="fullscreen" value="false" />
 <preference name="webviewbounce" value="false" />
-<preference name="ios-statusbarstyle" value="black-opaque" />
+<preference name="ios-statusbarstyle" value="default" />
 <preference name="exit-on-suspend" value="false" />
 <preference name="android-installLocation" value="auto" />
 <preference name="prerendered-icon" value="true" />
-
+<preference name="orientation" value="portrait" />
 
 <access origin="http://cr.i-solucions.com" subdomains="true"/>
 <access origin="http://pro1.i-solucions.com" subdomains="true"/>
