@@ -5,7 +5,7 @@
 
 (function() {
   var device_ready = true;
-  var jqm_mobile_init = true;
+  var jqm_mobile_init = false;
 
   var initApp = function() {
     if ((device_ready && jqm_mobile_init) || (jqm_mobile_init && !mobile_system)) {
@@ -15,22 +15,25 @@
 
   var onDeviceReady = function() {
     device_ready = true;
-    //alert('Device ready');
+    alert('Device ready');
     initApp();
   };
 
   var onMobileInit = function() {
     	$.support.cors = true;
-   	 $.mobile.allowCrossDomainPages = true;
+   	$.mobile.allowCrossDomainPages = true;
 	$.mobile.loadingMessage = "Cargando ...";
-        $.mobile.loadingMessageTheme = "b";
-        //$.mobile.loadingMessageTextVisible = false; 
+	$.mobile.loadingMessageTheme = "a";
+        $.mobile.loadingMessageTextVisible = true; 
         $.mobile.pageLoadErrorMessage = "Error al cargar la página";
-        $.mobile.pageLoadErrorMessageTheme = "e"
+        $.mobile.pageLoadErrorMessageTheme = "e";
+       
+
+  
 	// Navigation
         $.mobile.page.prototype.options.backBtnText = "Atrás";
 	$.mobile.page.prototype.options.addBackBtn      = true;
-	$.mobile.page.prototype.options.backBtnTheme    = "d";
+	$.mobile.page.prototype.options.backBtnTheme    = "h";
 	// Page
 	$.mobile.page.prototype.options.headerTheme = "h";  // Page header only
 	//$.mobile.page.prototype.options.contentTheme    = "c";
@@ -56,9 +59,8 @@
   };
 
   $(document).bind('mobileinit', onMobileInit);
-  document.addEventListener("deviceready", onDeviceReady, false);
+  document.addEventListener("deviceready", onDeviceReady, true);
 })();
-
 
 
 
