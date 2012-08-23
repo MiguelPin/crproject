@@ -2,10 +2,10 @@
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
 	id		= "com.crproject.cr"
-	version 	= "0.0.8">
+	version 	= "0.0.9">
 	<name>CR</name>
 	<description>
-		CR [project] - Beta 0.0.8
+		CR [project] - Beta 0.0.9
 	</description>
 	<author href="http://cr.i-solucions.com"
 		email="miquelpin@gmail.com">
@@ -32,16 +32,6 @@
 
 
 <gap:splash src="splash/android/ldpi.png" gap:platform="blackberry" />
-
-
-
-
-
-
-
-
-
-
 
 
 
