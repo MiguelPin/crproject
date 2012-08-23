@@ -49,48 +49,33 @@
 <div  data-role="content" data-theme="b" style="border:0; padding-top:40px;">
 <form  action="http://cr.i-solucions.com/" target="_self"  method="post"  id="tx_felogin_pi1211_form" data-ajax="false" style="border:0;text-align:center;margin:0px;padding:0;">
 
-<div data-role="fieldcontain" style="text-align:center;">
-
-<input type="text" id="user" style="padding-left:35px;width:220px; background:url(assets/ui/111-user.png) no-repeat 7px 7px; "name="user" value="" placeholder="Nombre de usuario:" />
-
+<div data-role="fieldcontain" style="text-align:center !important;border-bottom:0px;">
+<input type="text" id="user" style="margin: 0 5px 0 5px; padding-left:35px;width:220px; background:url(assets/ui/111-user.png) no-repeat 7px 7px;" name="user" value="" placeholder="Nombre de usuario:" />
 </div>
-<div  data-role="fieldcontain" style="text-align:center;">
-
-
-<input type="password" id="pass" name="pass" value="" style="padding-left:35px;width:220px;background:#eaeaea url(assets/ui/30-key.png) no-repeat 12px 3px;"placeholder="Password" />
-
+<div  data-role="fieldcontain" style=" text-align:center !important;border-bottom:0px;">
+<input type="password" id="pass" name="pass" value="" style="margin: 0 5px 0 5px  ; padding-left:35px;width:220px;background:#eaeaea url(assets/ui/30-key.png) no-repeat 12px 3px;"placeholder="Password" />
 </div>
-
-
-
-	<div data-role="fieldcontain"  class="ui-dialog"> 
-	<input  type="submit" name="submit"    data-theme="d" onclick="return ods_ajaxfelogin(this);" value="Iniciar sesi&oacute;n"  />
-	</div>
-
-
-
+<div data-role="fieldcontain"  class="ui-dialog" style="border-bottom:0px;"> 
+<input  type="submit" name="submit"    data-theme="d" onclick="return ods_ajaxfelogin(this);" value="Iniciar sesi&oacute;n"  />
+</div>
 <input type="hidden" name="logintype" value="login" />
 <input type="hidden" name="pid" value="35" />
 <input type="hidden" name="redirect_url" value="" data-ajax="false" />
 <input type="hidden" name="tx_felogin_pi1[noredirect]" value="0" />
 <div  data-role="fieldcontain" style="text-align:center;">
-<a data-role="button" data-inline="true" data-mini="true" href="http://cr.i-solucions.com/sc.html?tx_felogin_pi1[forgot]=1"  data-ajax="false" data-rel="internal"  >¿Olvidaste password?</a>
+<a data-role="button" data-inline="true" data-mini="true" href="http://cr.i-solucions.com/sc.html?tx_felogin_pi1[forgot]=1"  data-ajax="false" data-theme="d" data-rel="internal"  >¿Olvidaste tu password?</a>
 </form>
 </div>
-<div  data-role="fieldcontain" style="text-align:center;">
-<a  href="http://cr.i-solucions.com/registro.html" data-ajax="false=" target="_self" class="btn-autha btn-reg large" style="padding-bottom:15px" data-rel="internal" target="_self=">Regístrate ahora en <b>CR</b></a>
+<div  data-role="fieldcontain" style="text-align:center;border-bottom:0px;">
+<a  href="http://cr.i-solucions.com/registro.html" data-ajax="false=" target="_self" class="btn-autha btn-reg large" style="padding-left:30px;padding-right:30px; padding-bottom:15px" data-rel="internal" target="_self=">Regístrate ahora en <b>CR</b></a>
 </div>
-<div  data-role="fieldcontain" style="text-align:center;">
+<div  data-role="fieldcontain" style="text-align:center; border-bottom:0px;">
 <a class="btn-auth btn-facebook large" 
 data-ajax="false"
 target="_self"
 data-rel="internal"
 href="https://www.facebook.com/login.php?api_key=261261113990340&cancel_url=http://cr.i-solucions.com&display=popup&fbconnect=1&next=http://cr.i-solucions.com/?id=1&return_session=1&session_version=3&v=1.0" style="color:white;">Login con <b>Facebook</b></a>
-
 </div>
-
-
-
 </div>
 
 
