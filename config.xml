@@ -39,12 +39,18 @@
 
 
 
+
+
+
+
+
+
 <preference name="stay-in-webview" value="true" />
 <preference name="prerendered-icon" value="true" />
 <preference name="android-minSdkVersion" value="10" />
 <preference name="android-maxSdkVersion" value="15" />
 <preference name="target-device" value="handset" />
-<preference name="phonegap-version" value="2.0.0" />
+<preference name="phonegap-version" value="1.9.0" />
 <preference name="fullscreen" value="false" />
 <preference name="webviewbounce" value="false" />
 <preference name="ios-statusbarstyle" value="default" />
