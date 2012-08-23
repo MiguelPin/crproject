@@ -16,28 +16,14 @@
 <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />  
 
 
+<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/js/json2.js"></script>
+
 <script src="assets/js/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="assets/js/mobileinit.js" type="text/javascript"></script>
 <script src="assets/js/jquery.mobile.js" type="text/javascript" charset="utf-8"></script>
 
- <script type="text/javascript">
-    var userAgent = navigator.userAgent + '';
-    if (userAgent.indexOf('iPhone') > -1) {
-      document.write('<script src="cordova-1.9.0.js" type="text/javascript"></sc' + 'ript>');
-      var mobile_system = 'iphone';
-    } else if (userAgent.indexOf('Android') > -1) {
-      document.write('<script src="cordova-android-1.9.0.js" type="text/javascript"></sc' + 'ript>');
-      var mobile_system = 'android';
-    } else if (userAgent.indexOf('Windows') > -1) {
-     document.write('<script src="cordova-windows-1.9.0.js" type="text/javascript"></sc' + 'ript>');
-      var mobile_system = 'windows';
-    }
-     else {
-     document.write('<script src="cordova-1.9.0.js" type="text/javascript"></sc' + 'ript>');
-      var mobile_system = '';
-    }
-  </script>
-<script type="text/javascript" charset="utf-8" src="assets/js/json2.js"></script>
+
 
 
 
