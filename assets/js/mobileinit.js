@@ -4,7 +4,7 @@
 
 
 (function() {
-  var device_ready = true;
+  var device_ready = false;
   var jqm_mobile_init = false;
 
   var initApp = function() {
@@ -15,7 +15,7 @@
 
   var onDeviceReady = function() {
     device_ready = true;
-    alert('Device ready');
+    //alert('Device ready');
     initApp();
   };
 
