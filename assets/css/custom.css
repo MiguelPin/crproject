@@ -1649,7 +1649,11 @@ div.ps-toolbar-play div.ps-toolbar-content
 
 @media all and (max-width:400px) {  
 .ui-bar-h {
+min-height:39px;
+max-height:39px;
+height:39px;
 padding:2px 0;
+
 }
 }
 

@@ -8,6 +8,13 @@ if (window.device && device.platform && device.platform.toLowerCase() == 'androi
 
             document.write('<script type="text/javascript" charset="utf-8" src="cordova-android-' + cordovaPath + '"></script>');
 	}
+	
+	else if (window.device && device.platform && device.platform.toLowerCase() == 'windows phone') {
+
+            document.write('<script type="text/javascript" charset="utf-8" src="cordova-win-' + cordovaPath + '"></script>');
+	}
+	
+	
 	else {
 	document.write('<script type="text/javascript" charset="utf-8" src="cordova-' + cordovaPath + '"></script>');
 	}
@@ -15,12 +22,4 @@ if (window.device && device.platform && device.platform.toLowerCase() == 'androi
 
 
 
-function goBack() {
-	if (window.device && device.platform && device.platform.toLowerCase() == 'android') {
 
-            navigator.app.backHistory();
-	}
-	else {
-	    window.history.go(-1);
-	}
-}
