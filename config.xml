@@ -48,7 +48,7 @@
 <preference name="target-device" value="universal" />
 
 
-<access origin="*" />
+
 <access origin="http://cr.i-solucions.com" subdomains="true"/>
 <access origin="http://pro1.i-solucions.com" subdomains="true"/>
 <access origin="http://youtu.be" subdomains="true"/>
