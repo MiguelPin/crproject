@@ -1,7 +1,7 @@
 
 
 var startApp = function() {
-// alert('APP.CR Started');
+// alert('CR Started');
 
 };
 
@@ -20,7 +20,8 @@ $(function() {
         var miperfil = $("#miperfil_"+rowToUpdate).val();
         var cuandopost = $("#cuandopost_"+rowToUpdate).val();
         var parentuid = $("#parentuid_"+rowToUpdate).val();
-        var dataString = '&tx_locator_categories='+ tx_locator_categories + '&comments=' + comments + '&parentuid=' + parentuid + '&cuandopost=' + cuandopost + '&miperfil=' + miperfil;
+        var uid = $("#uid_"+rowToUpdate).val();
+        var dataString = '&tx_locator_categories='+ tx_locator_categories + '&comments=' + comments + '&parentuid=' + parentuid + '&cuandopost=' + cuandopost + '&miperfil=' + miperfil+ '&uid=' + uid;
 	$.ajax({
             type: "POST",
             url: "./index.php?id=62",
@@ -29,7 +30,7 @@ $(function() {
                 $('.activo_'+rowToUpdate).fadeOut(200).hide(); 
                 $('.actual').css("background","#39c3c8").html('Estado activo');
                 $('.actual_'+rowToUpdate).css("background","#964040").fadeIn(800).show().html('Estado actual');
-                
+                  $('#activa_'+rowToUpdate).fadeOut(200).hide(); 
 
 
 		$('.error').fadeOut(200).hide(); 
@@ -57,16 +58,26 @@ $(function() {
 		$('.actual_'+rowToUpdate).fadeOut(300).hide(); 
            	$('#desactiva_'+rowToUpdate).fadeOut(300).hide(); 
 		$('#actualiza_'+rowToUpdate).fadeOut(200).hide(); 
-       
-
-                 $('#comments_'+rowToUpdate).val('');
-
-		$('.error').fadeOut(200).hide(); 
-            }
+                $('#comments_'+rowToUpdate).val('');
+                $('.error').fadeOut(200).hide(); 
+            }, 
+            error: function(){
+            
+                $('#comments_'+rowToUpdate).val('error');
+              
+            },
         });
         return false;
     });
 });       
+
+
+
+
+
+
+
+
 
 
 
@@ -396,12 +407,10 @@ $('#success').removeClass('selected').addClass('Unselected');
  
  $(document).ready( function()
 {
-  $.easing.def = 'easeInOutSine';
+$.easing.def = 'easeInOutSine';
 $('update').slideDown({duration: 'slow',easing: 'easeInOutSine'});
 $('.update').fadeIn(2200).html();
-$("img.lazy").lazyload({ 
-    effect : "fadeIn"
-});
+$("img.lazy").lazyload({effect : "fadeIn"});
 
 
 
@@ -490,7 +499,7 @@ $(document).ready( function()
     });
 });
 
-function goBack(){window.history.go(-1)}
+
 
 $(function() {
 $(".delete_button").click(function() {
@@ -583,6 +592,11 @@ return false;
 });
 	
 
+
+
+
+
+
 $(".ui-dialog button").live("click", function() {
 $("[data-role='dialog']").dialog("close");
 });
@@ -609,9 +623,24 @@ $.mobile.showPageLoadingMsg();
 $(".ajax").live("click", function() {
 $.mobile.showPageLoadingMsg();
 });
+$(".regg").live("click", function() {
+$.mobile.showPageLoadingMsg();
+});
+
+$(".facebook").live("click", function() {
+$.mobile.showPageLoadingMsg("a", "No disponible!", true);
+});
 
 
 
+if (window.device && device.platform && device.platform.toLowerCase() == 'android') {
 
+ function goBack(){window.history.back()}
+	}
+	
+else {
+	function goBack(){window.history.go(-1)}
+	
+	}
 
 
